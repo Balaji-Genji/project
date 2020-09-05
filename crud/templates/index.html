@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="add">
+    {% csrf_token %}
+<div class="row">
+    <div class="col-mg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <label>Student Name</label>
+            {{form.name}}
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-mg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <label>Student Mobile</label>
+            {{form.mobile}}
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-mg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <label>Student Address</label>
+            {{form.address}}
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-mg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <label>Location</label>
+            {{form.village}}
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+    <div class="row">
+    <div class="col-mg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+</form>
+
+</body>
+</html>

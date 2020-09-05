@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Student Mobile</th>
+        <th>Student Address</th>
+        <th>Student village</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for students in student %}
+     <tr>
+        <td>{{students.id}}</td>
+        <td>{{students.name}}</td>
+        <td>{{students.mobile}}</td>
+        <td>{{students.address}}</td>
+        <td>{{students.village}}</td>
+         <td><a href="/edit/{{students.id}}">Edit</a>|<a href="/delete/{{students.id}}">Delete</a> </td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
